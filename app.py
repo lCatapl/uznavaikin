@@ -488,9 +488,11 @@ body {font-family:Arial,sans-serif;padding:20px;background:#f8f9fa;}
 text-decoration:none;display:inline-block;margin:50px 10px;transition:all 0.3s;}
 .back-btn:hover {transform:translateY(-3px);box-shadow:0 15px 35px rgba(0,123,255,0.4);}
 @media (max-width:768px) {
-    .container {{padding:20px;margin:10px;border-radius:20px;}}
-    .grid {{grid-template-columns:1fr !important;gap:20px;padding:10px;}}
-    .breadcrumbs {{font-size:16px;padding:20px;}}
+    .container {padding:20px;margin:10px;border-radius:20px;}
+    .grid {grid-template-columns:1fr !important;gap:20px;padding:10px;}
+    .breadcrumbs {font-size:16px;padding:20px;}
+}
+
 }
 </style></head>
 <body>
@@ -761,4 +763,5 @@ input,textarea,button {{font-family:inherit;}}
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 10000))  # Render default 10000!
     app.run(host='0.0.0.0', port=port, debug=False)
+
 
